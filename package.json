@@ -1,14 +1,19 @@
 {
   "name": "create-michels",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "NodeJS template with typescript",
-  "main": "index.js",
+  "main": "src/main.js",
+  "bin": {
+    "create-michels": "./dist/main.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
+    "start": "tsx src/main.ts",
     "dev": "tsx watch src/main.ts",
-    "build": "tsup src/",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage",
+    "build": "tsup src/main.ts --minify --dts-resolve",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "lint": "eslint .",
@@ -25,13 +30,12 @@
     "@types/node": "^20.11.20",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
     "@typescript-eslint/parser": "^6.19.1",
-    "@vitest/coverage-v8": "^1.2.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.0.6",
     "prettier": "^3.2.4",
     "tsup": "^8.0.1",
     "tsx": "^4.7.0",
-    "vitest": "^1.2.2"
+    "@inquirer/prompts": "^4.3.0"
   }
 }

@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
     "target": "es2022",
-    "module": "commonjs",
+    "module": "es2022",
     "outDir": "./dist",
     "noImplicitAny": false,
     "esModuleInterop": true,
     "removeComments": true,
     "resolveJsonModule": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "Node",
