@@ -1,37 +1,7 @@
 # create-michels
 
-A basic Node JS template for startup projects with:
+Utility for creating new projects and resources within projects
 
-- Typescript
-- Husky
-- Jest
-- Prettier
-- Lint
-- VS Code Settings
-- Github Actions
+## how to use
 
-## Usage
-
-Install Dependencies
-
-```sh
-npm install
-```
-
-Devevelopment with live reload
-
-```sh
-npm run dev
-```
-
-Test
-
-```sh
-npm run test
-```
-
-Test Coverage
-
-```sh
-npm run test:coverage
-```
+`npm create michels`
