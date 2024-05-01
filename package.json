@@ -31,6 +31,9 @@
   ],
   "author": "Marcelo Michels",
   "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^5.0.2"
+  },
   "devDependencies": {
     "@types/node": "^20.12.7",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
