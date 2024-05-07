@@ -7,10 +7,10 @@ export default async function main() {
     message: 'Choose a project',
     choices: [
       {
-        name: 'node-ts',
+        name: 'mm-node-ts',
         value: JSON.stringify({
-          repoURL: 'https://github.com/marcelo-michels/node-ts.git',
-          repoName: 'node-ts',
+          repoURL: 'git@github.com:marcelo-michels/mm-node-ts.git',
+          repoName: 'mm-node-ts',
         }),
         description: 'Create a basic Node.js project with TypeScript',
       },
