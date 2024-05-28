@@ -1,8 +1,9 @@
 {
   "name": "create-mm",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "NodeJS template with typescript",
   "main": "dist/main.js",
+  "type": "module",
   "bin": {
     "create-mm": "dist/main.js"
   },
@@ -19,9 +20,9 @@
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "start": "npm run check-nvm && tsc --noEmit && tsx src/main.ts",
-    "test": "vitest run",
-    "test:coverage": "vitest run --coverage",
-    "test:watch": "vitest",
+    "test": "glob src/**/*.test.ts -c 'tsx --test'",
+    "test:coverage": "glob src/**/*.test.ts -c 'tsx --experimental-test-coverage --test'",
+    "test:watch": "glob src/**/*.test.ts -c 'tsx watch --test'",
     "update-npm": "npx npm-check-updates",
     "update-upstream": "node scripts/update-upstream.js"
   },
@@ -32,20 +33,19 @@
   "author": "Marcelo Michels",
   "license": "MIT",
   "dependencies": {
-    "@inquirer/prompts": "^5.0.2"
+    "@inquirer/prompts": "^5.0.4"
   },
   "devDependencies": {
-    "@types/node": "^20.12.10",
-    "@typescript-eslint/eslint-plugin": "^7.8.0",
-    "@typescript-eslint/parser": "^7.8.0",
-    "@vitest/coverage-v8": "^1.6.0",
+    "@types/node": "^20.12.12",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
+    "glob": "^10.4.1",
     "husky": "^9.0.11",
     "prettier": "^3.2.5",
     "tsup": "^8.0.2",
-    "tsx": "^4.9.3",
-    "typescript": "^5.4.5",
-    "vitest": "^1.4.0"
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5"
   }
 }

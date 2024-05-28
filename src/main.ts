@@ -22,7 +22,7 @@ import { select } from '@inquirer/prompts';
   });
 
   if (answer === 'project') {
-    (await import('./project/main')).default();
+    (await import('./project/main.js')).default();
   } else if (answer === 'resource') {
     // create a new resource
   }
