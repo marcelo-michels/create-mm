@@ -15,6 +15,14 @@ export default async function main() {
         description: 'Create a basic Node.js project with TypeScript',
       },
       {
+        name: 'mm-aws-cdk-ts',
+        value: JSON.stringify({
+          repoURL: 'git@github.com:marcelo-michels/mm-aws-cdk-ts.git',
+          repoName: 'mm-aws-cdk-ts',
+        }),
+        description: 'Create a NodeJS project with AWS CDK and TypeScript',
+      },
+      {
         value: 'cancel',
         description: 'Exit the program',
       },
