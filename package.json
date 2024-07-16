@@ -33,19 +33,19 @@
   "author": "Marcelo Michels",
   "license": "MIT",
   "dependencies": {
-    "@inquirer/prompts": "^5.0.6"
+    "@inquirer/prompts": "^5.1.2"
   },
   "devDependencies": {
-    "@types/node": "^20.14.8",
-    "@typescript-eslint/eslint-plugin": "^7.13.1",
-    "@typescript-eslint/parser": "^7.13.1",
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "glob": "^10.4.2",
+    "glob": "^10.4.5",
     "husky": "^9.0.11",
-    "prettier": "^3.3.2",
+    "prettier": "^3.3.3",
     "tsup": "^8.1.0",
-    "tsx": "^4.15.7",
-    "typescript": "^5.5.2"
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
   }
 }
