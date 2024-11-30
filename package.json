@@ -33,7 +33,7 @@
   "author": "Marcelo Michels",
   "license": "MIT",
   "dependencies": {
-    "@inquirer/prompts": "^5.5.0"
+    "@inquirer/prompts": "^7.1.0"
   },
   "devDependencies": {
     "@types/node": "^22.10.1",
